@@ -6,45 +6,33 @@ package example.com.recyclerviewlab;
 public class CustomObjectSecond {
     String mTitle;
     String mDescription;
-    String mColor;
+    String mListName;
     Boolean mcheck;
+    String mListTitle;
 
-    public CustomObjectSecond(String title, String description, String color){
+    public CustomObjectSecond(String title, String description){
         mTitle = description;
         mDescription = title;
-        mColor = color;
-        mcheck = false;
     }
 
     public String getmTitle() {
         return mTitle;
     }
 
-    public void setmTitle(String mTitle) {
-        this.mTitle = mTitle;
+    public void setmTitle(String title){
+        mTitle = title;
     }
 
-    public String getmDescription() {
+    public String getmDescription(){
         return mDescription;
     }
 
-    public void setmDescription(String mDescription) {
-        this.mDescription = mDescription;
+    public void setmDescription(String description){
+        mDescription = description;
     }
 
-    public String getmColor() {
-        return mColor;
+    public String getmListName(){
+        return mListName;
     }
 
-    public void setmColor(String mColor) {
-        this.mColor = mColor;
-    }
-
-    public Boolean getmcheck(){
-        return mcheck;
-    }
-
-    public void setmcheck(Boolean mcheck){
-        this.mcheck = mcheck;
-    }
 }

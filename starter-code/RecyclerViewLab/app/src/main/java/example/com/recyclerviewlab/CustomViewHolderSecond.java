@@ -11,24 +11,19 @@ import android.widget.TextView;
  */
 public class CustomViewHolderSecond extends RecyclerView.ViewHolder {
 
-//    TextView textView1aS;
-//    TextView textView2aS;
+
     TextView textView1b;
     TextView textView2b;
-//    Button buttonaS;
-    Button buttonbS;
-    CheckBox checkboxb;
+    Button mAddItemss;
+    Button mbuttonRemoveItem;
 
     public CustomViewHolderSecond (View itemView){
         super(itemView);
 
-//        textView1aS = (TextView) itemView.findViewById(R.id.textView1aS);
-//        textView2aS = (TextView) itemView.findViewById(R.id.textView2aS);
         textView1b = (TextView) itemView.findViewById(R.id.textView1b);
         textView2b = (TextView) itemView.findViewById(R.id.textView2b);
-//        buttonaS = (Button) itemView.findViewById(R.id.button1aS);
-        buttonbS = (Button) itemView.findViewById(R.id.button1b);
-        checkboxb = (CheckBox) itemView.findViewById(R.id.check_box);
+        mAddItemss = (Button) itemView.findViewById(R.id.add_items);
+        mbuttonRemoveItem = (Button) itemView.findViewById(R.id.buttonRemoveItem);
 
     }
 

@@ -3,29 +3,26 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#90003153">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="To The Second Activity">
+        android:text="To The Second Activity"
+        android:backgroundTint="#003153"
+        android:layout_margin="20dp"
+        android:id="@+id/list_item_to_next_page"
+        >
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:weightSum="1">
-
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="15dp"
-                android:id="@+id/button1a"
-
-               />
-
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="200dp"
@@ -37,77 +34,42 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Title Text"
+                android:text="The title goes here"
+                android:textColor="#e6e5e7"
                 android:id="@+id/textView1a"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:layout_marginTop="20dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Description Text"
+                android:text="Your description here"
+                android:textColor="#e6e5e7"
                 android:id="@+id/textView2a"
-                android:layout_weight="11.91" />
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/check_box1"
+            android:text="Finished"
+            android:textColor="#e6e5e7"
+            android:layout_marginRight="-60dp"
+            android:checked="false">
+        </CheckBox>
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="#33003153"
+        android:text="Delete"
+        android:textStyle="bold"
+        android:textColor="#e6e5e7"
+        android:id="@+id/buttonRemove">
+    </Button>
 </LinearLayout>
-    <!--<LinearLayout-->
-        <!--android:orientation="horizontal"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="100dp">-->
-
-        <!--<LinearLayout-->
-            <!--android:orientation="vertical"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="52dp"-->
-            <!--android:weightSum="1">-->
-
-            <!--<Button-->
-                <!--android:layout_width="40dp"-->
-                <!--android:layout_height="40dp"-->
-                <!--android:layout_margin="15dp"-->
-                <!--android:id="@+id/button1b"-->
-                <!--android:backgroundTint="#669900"/>-->
-
-        <!--</LinearLayout>-->
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="200dp"-->
-            <!--android:layout_height="100dp"-->
-            <!--android:orientation="vertical"-->
-            <!--android:layout_margin="-5dp">-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
-                <!--android:text="Title Text"-->
-                <!--android:id="@+id/textView1b"-->
-                <!--android:textSize="30dp"-->
-                <!--android:layout_marginTop="20dp"/>-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
-                <!--android:text="Description Text"-->
-                <!--android:id="@+id/textView2b"-->
-                <!--android:layout_weight="11.91" />-->
-        <!--</LinearLayout>-->
-        <!--<LinearLayout-->
-            <!--android:layout_width="200dp"-->
-            <!--android:layout_height="100dp"-->
-            <!--android:orientation="vertical"-->
-            <!--android:layout_margin="-5dp"-->
-            <!--android:layout_marginRight="-100dp">-->
-
-            <!--<CheckBox-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:layout_marginLeft="90dp"/>-->
-        <!--</LinearLayout>-->
-
-    <!--</LinearLayout>-->
-

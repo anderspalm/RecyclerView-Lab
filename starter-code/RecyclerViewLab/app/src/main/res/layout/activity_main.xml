@@ -1,22 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout android:layout_height="match_parent"
+<RelativeLayout
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-        <Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#901a1a1a">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Press To Go To Second Activity"
-        android:onClick="sendMessage"/>
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="#90003153">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Tasks"
+            android:textSize="25dp"
+            android:textColor="#e6e5e7"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="#90003153">
+    </Button>
 
     <android.support.v7.widget.RecyclerView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recyclerview_main">
 
-
-
     </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Lists"
+        android:background="@drawable/rounded_button"
+        android:textColor="#e6e5e7"
+        android:id="@+id/add_lists"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        >
+    </Button>
 </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:background="#33003153"
+        android:text="Remove Everything"
+        android:textStyle="bold"
+        android:textColor="#e6e5e7"
+        android:id="@+id/buttonRemoveAll"
+        android:layout_alignParentBottom="true"
+        >
+    </Button>
+
+        <!--android:onClick="sendMessage"/>-->
+
+
+</RelativeLayout>

@@ -1,18 +1,40 @@
 package example.com.recyclerviewlab;
 
+import android.widget.CheckBox;
+
+import java.util.ArrayList;
+
 /**
  * Created by andeski on 7/5/16.
  */
 public class CustomObjectFirst {
     String mTitle;
     String mDescription;
-    String mColor;
 
-    public CustomObjectFirst(String color, String title, String description){
+    ArrayList<CustomObjectSecond> mArrayItem;
+
+    /* Because we have access to the second object through the instantiation of the array in this
+    screenm we can greate an setter method and populate with instances of that object's class
+     */
+    public void msetArrayitem(String title, String description){
+        mArrayItem.add(new CustomObjectSecond(title,description));
+    }
+
+    public ArrayList<CustomObjectSecond> getmArrayItem() {
+        return mArrayItem;
+    }
+
+    public CustomObjectFirst(String title, String description) {
         mTitle = title;
         mDescription = description;
-        mColor = color;
+        mArrayItem = new ArrayList<>();
     }
+
+    public ArrayList<CustomObjectSecond> grabSecondsInfo(){
+        return mArrayItem;
+    }
+
+    public CustomObjectFirst() {}
 
     public String getmTitle() {
         return mTitle;
@@ -30,12 +52,9 @@ public class CustomObjectFirst {
         this.mDescription = mDescription;
     }
 
-    public String getmColor() {
-        return mColor;
+    public void removeAllItems(){
+        mArrayItem.removeAll(mArrayItem);
     }
 
-    public void setmColor(String mColor) {
-        this.mColor = mColor;
-    }
 
 }

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,51 +16,39 @@ import java.util.List;
  */
 public class CustomRecyclerViewAdapterSecond extends RecyclerView.Adapter<CustomViewHolderSecond> {
 
-    List<CustomObjectSecond> mcustomObjectSeconds;
+    ArrayList<CustomObjectSecond> marrayitem;
 
-    public CustomRecyclerViewAdapterSecond(List<CustomObjectSecond> name, boolean check){
-        mcustomObjectSeconds = name;
-
+    public CustomRecyclerViewAdapterSecond(ArrayList<CustomObjectSecond> arrayitem, boolean b) {
+        marrayitem = arrayitem;
     }
 
+    @Override
     public CustomViewHolderSecond onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View word = inflater.inflate(R.layout.custom_secondary, (ViewGroup) parent, false);
+        View word = inflater.inflate(R.layout.custom_secondary, parent, false);
         CustomViewHolderSecond viewHolderSecond = new CustomViewHolderSecond(word);
-        return  viewHolderSecond;
+        return viewHolderSecond;
+    }
+
+    @Override
+    public void onBindViewHolder(CustomViewHolderSecond holder, int position) {
+        String a = marrayitem.get(position).getmTitle();
+        String b = marrayitem.get(position).getmDescription();
+        holder.textView1b.setText(a);
+        holder.textView2b.setText(b);
+
+//        holder.mbuttonRemoveItem.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                marrayitem.removeAll(marrayitem);
+//                notifyDataSetChanged();
+//            }
+//        });
     }
 
     @Override
     public int getItemCount() {
-        return mcustomObjectSeconds.size();
+        return marrayitem.size();
     }
 
-    public void onBindViewHolder(final CustomViewHolderSecond holder, final int position) {
-        holder.textView2b.setText(mcustomObjectSeconds.get(position).getmDescription());
-        holder.textView1b.setText(mcustomObjectSeconds.get(position).getmTitle());
-        holder.buttonbS.setBackgroundColor(Color.parseColor(mcustomObjectSeconds.get(position).getmColor()));
-        holder.checkboxb.setChecked(mcustomObjectSeconds.get(position).getmcheck());
-
-
-        final int myPosition = position;
-//         We now have an object that comes from the list
-//        CustomObjectSecond customObject = CustomObjectSecondList.get(position);
-
-        holder.checkboxb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            if (holder.checkboxb.isChecked()) {
-                mcustomObjectSeconds.get(position).setmcheck(true);
-                holder.checkboxb.setChecked(true);
-                Toast.makeText(view.getContext(), "You checked the checkbox" + position, Toast.LENGTH_SHORT).show();
-                }
-            else {
-                mcustomObjectSeconds.get(position).setmcheck(true);
-                holder.checkboxb.setChecked(false);
-                Toast.makeText(view.getContext(), "You unchecked the checkbox" + position, Toast.LENGTH_SHORT).show();
-            }
-            }
-        });
-    }
 }

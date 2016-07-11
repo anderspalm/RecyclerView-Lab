@@ -3,6 +3,8 @@ package example.com.recyclerviewlab;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 /**
@@ -12,20 +14,22 @@ public class CustomViewHolderFirst extends RecyclerView.ViewHolder {
 
     TextView textView1a;
     TextView textView2a;
-//    TextView textView1b;
-//    TextView textView2b;
-    Button buttona;
-//    Button buttonb;
+    Button mbuttonRemove;
+    Button mAddItems;
+    CheckBox mCheckCompleted;
+    Button mbuttonRemoveAll;
 
-    public CustomViewHolderFirst (View itemView){
+
+        public CustomViewHolderFirst (View itemView){
         super(itemView);
+
 
         textView1a = (TextView) itemView.findViewById(R.id.textView1a);
         textView2a = (TextView) itemView.findViewById(R.id.textView2a);
-//        textView1b = (TextView) itemView.findViewById(R.id.textView1b);
-//        textView2b = (TextView) itemView.findViewById(R.id.textView2b);
-        buttona = (Button) itemView.findViewById(R.id.button1a);
-//        buttonb = (Button) itemView.findViewById(R.id.button1b);
+        mbuttonRemove = (Button) itemView.findViewById(R.id.buttonRemove);
+        mAddItems = (Button) itemView.findViewById(R.id.add_items);
+        mCheckCompleted = (CheckBox) itemView.findViewById(R.id.check_box1);
+        mbuttonRemoveAll = (Button) itemView.findViewById(R.id.buttonRemoveAll);
 
     }
 
