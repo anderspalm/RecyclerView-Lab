@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="66841d75-d3cd-48ea-bc4f-cd3e48b681de" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/.idea/misc.xml" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomObjectFirst.java" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomObjectFirst.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomRecyclerViewAdapterFirst.java" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomRecyclerViewAdapterFirst.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomRecyclerViewAdapterSecond.java" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomRecyclerViewAdapterSecond.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomViewHolderFirst.java" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomViewHolderFirst.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomViewHolderSecond.java" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/CustomViewHolderSecond.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/MainActivity.java" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/SecondaryActivity.java" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/java/example/com/recyclerviewlab/SecondaryActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/res/layout/activity_secondary.xml" afterPath="$PROJECT_DIR$/starter-code/RecyclerViewLab/app/src/main/res/layout/activity_secondary.xml" />
     </list>
     <ignored path="RecyclerView-Lab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,9 +38,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="49" />
-    <option name="y" value="-4" />
+    <option name="y" value="84" />
     <option name="width" value="1871" />
-    <option name="height" value="1084" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -64,13 +67,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane />
       </pane>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,7 +181,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="-4" width="1871" height="1084" extended-state="6" />
+    <frame x="49" y="84" width="1871" height="1028" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

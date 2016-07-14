@@ -27,15 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Button mbuttonRemove;
     Button mbuttonRemoveAll;
 
-//    ArrayList mlistitems;
-//    ArrayList mitems = new ArrayList();
-
     public static final CustomObjectFirst tool = new CustomObjectFirst();
-//
-//    final public static CustomObjectFirst getList(int position){
-//
-//
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,29 +37,20 @@ public class MainActivity extends AppCompatActivity {
         mCheckCompleted = (CheckBox) findViewById(R.id.check_box1);
         mItemView = (LinearLayout) findViewById(R.id.list_item_to_next_page);
 
-
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_main);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
 
-
         mRecyclerView.setLayoutManager(linearLayoutManager);
-
 
 //      final List<CustomObjectFirst> customObjectList1 = new ArrayList<>();
 //      customObjectList1.add(new CustomObjectFirst("#669900", "title1", "description1"));
         ArrayList<ArrayList> something = new ArrayList<>();
         Singleton singleton = Singleton.getInstance();
 
-
-
-
         // adding the array items to the recycle view for some reason
 
        final Singleton temp = Singleton.getInstance();
        final CustomRecyclerViewAdapterFirst adapterFirst = new CustomRecyclerViewAdapterFirst(temp.getArrayList());
-
-
-//
 
 //  CustomRecyclerViewAdapterFirst adapterFirst = new CustomRecyclerViewAdapterFirst();
         mRecyclerView.setAdapter(adapterFirst);
